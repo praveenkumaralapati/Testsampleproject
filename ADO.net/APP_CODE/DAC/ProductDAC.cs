@@ -24,8 +24,11 @@ namespace ADO.net.APP_CODE.DAC
             da.SelectCommand = cmd;
             //#4.Data set
             DataSet ds = new DataSet();
+            //open
             con.Open();
+            //fill
             da.Fill(ds);
+            //close
             con.Close();
             return ds;
         }
