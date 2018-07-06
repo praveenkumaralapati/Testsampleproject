@@ -90,7 +90,7 @@ namespace ADO.net.APP_CODE.DAC
 
             int rowseffect = cmd.ExecuteNonQuery();
 
-
+            //connection close
             con.Close();
 
             if (rowseffect > 0) { return true; }
@@ -99,6 +99,7 @@ namespace ADO.net.APP_CODE.DAC
                 return false;
 
             }
+           
 
         }
 
